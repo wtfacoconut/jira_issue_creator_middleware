@@ -14,9 +14,9 @@ Setup instructions:
 
 How to call the API:
 
-There are two api end points, "<host>:5000/issue" and "<host>:5000/premadeissue".
+There are two api end points, "host:5000/issue" and "host:5000/premadeissue".
 
-- POST Calls to "<host>:5000/issue" will require that you provide data to parameters:
+- POST Calls to "host:5000/issue" will require that you provide data to parameters:
 
     `curl -d "url=https://www.google.com&username=bob&usersecret=password123&issuesummary=this is a bad issue&projectkey=AOS1&issuetypeid=10002" -X POST http://localhost:5000/issue`
 
@@ -35,7 +35,7 @@ There are two api end points, "<host>:5000/issue" and "<host>:5000/premadeissue"
   -- ('issuetypeid', required=False)
 
 
-- There is also "<host>:5000/testissue" that accpets POST and GET. 
+- There is also "host:5000/testissue" that accpets POST and GET. 
   - GET requests will result in some default data being sent back in the request.
   - POST requests will echo back any data supplied to the parameters.
 
